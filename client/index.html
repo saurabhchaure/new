@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tracker</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="top">
+      <div class="top-menu">
+        <div class="btns">
+          <div class="menu-btn">
+            <span class="link-btn-body">
+              <a class="link-btn active" href="#">Tracker</a>
+              <div class="line"></div>
+            </span>
+            <span class="link-btn-body">
+              <a class="link-btn" href="#">History</a>
+              <div class="line-inactive"></div>
+            </span>
+            <span class="link-btn-body">
+              <a class="link-btn" href="#">Configuration</a>
+              <div class="line-inactive"></div>
+            </span>
+            <span class="link-btn-body">
+              <a class="link-btn" href="#">FAQ</a>
+              <div class="line-inactive"></div>
+            </span>
+            <span class="link-btn-body">
+              <a class="link-btn" href="#">Profile</a>
+              <div class="line-inactive"></div>
+            </span>
+          </div>
+          <div class="tool-btn">
+            <div class="start-btn">Start</div>
+            <div class="stop-btn">Stop</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mid">
+      <div class="tracker-container">
+        <div class="container-top">
+          <div class="user-name">User Name : Saurabh Chaure</div>
+          <div class="activity-timer">00 : 00 : 00</div>
+          <div class="total-work-hr">Total Working Hours : 05 : 00</div>
+        </div>
+        <div class="hr-2px-line"></div>
+        <div class="container-mid">
+          <div class="container-mid-left">
+            <div class="heading">11th November 2023, Sunday</div>
+            <div class="activity-wrapper-left">
+              <div class="wrapper-top">
+                <div class="small-heading-i">Select Activity :</div>
+                <select
+                  name="main-activity"
+                  id="main-activity"
+                  class="activity-select"
+                >
+                  <option value="">Please choose Main Activity</option>
+                  <option value="recon">Recon Activity</option>
+                  <option value="eod">EOD Activity</option>
+                  <option value="dag">DAG Activity</option>
+                </select>
+                <select
+                  name="sub-activity"
+                  id="sub-activity"
+                  class="activity-select"
+                  disabled
+                >
+                  <option value="">Please choose Sub Activity</option>
+                  <option value="manualMatching">Manual Matching</option>
+                  <option value="auditPack">Audit Pack</option>
+                  <option value="feedValidation">Feed Validation</option>
+                </select>
+                <select name="client" id="client" class="activity-select">
+                  <option value="">Please choose Client</option>
+                  <option value="agi">AGI</option>
+                  <option value="fc">FC</option>
+                  <option value="ge">GE</option>
+                  <option value="prud">PRUD</option>
+                </select>
+                <div class="short-values">
+                  <div class="pair">
+                    <label class="key" for="val">Break Matched</label>
+                    <input class="val" type="number" />
+                  </div>
+                  <div class="pair">
+                    <label class="key" for="val">Break Matched</label>
+                    <input class="val" type="number" />
+                  </div>
+                  <div class="pair">
+                    <label class="key" for="val">Break Matched</label>
+                    <input class="val" type="number" />
+                  </div>
+                  <div class="pair">
+                    <label class="key" for="val">Break Matched</label>
+                    <input class="val" type="number" />
+                  </div>
+                  <div class="pair">
+                    <label class="key" for="val">Break Matched</label>
+                    <input class="val" type="number" />
+                  </div>
+                  <div class="pair">
+                    <label class="key" for="val">Break Matched</label>
+                    <input class="val" type="number" />
+                  </div>
+                </div>
+                <div class="add-comment">
+                  <input
+                    type="text"
+                    placeholder="Additional Comment"
+                    class="comm-input"
+                  />
+                  <div class="add-icon">
+                    <span class="material-symbols-outlined"> add </span>
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper-bot">
+                <div class="small-heading-i">Activity Log :</div>
+                <div class="prev-comment-li">
+                  <div class="prev-comment">
+                    <p class="time">04:02:00 PM</p>
+                    <p class="comm">Activity Started</p>
+                  </div>
+                  <div class="prev-comment">
+                    <p class="time">04:05:00 PM</p>
+                    <p class="comm">Comment: 102 break matched</p>
+                  </div>
+                  <div class="prev-comment">
+                    <p class="time">04:25:00 PM</p>
+                    <p class="comm">Comment: Technical Issue</p>
+                  </div>
+                  <div class="prev-comment">
+                    <p class="time">04:27:00 PM</p>
+                    <p class="comm">Tracker Paused: VDI Inactive</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vr-2px-line"></div>
+          <div class="container-mid-right">
+            <div class="heading">Completed Activities :</div>
+            <div class="activity-wrapper-right">
+              <div class="activity-bars">
+                <div class="activity-bar">
+                  <div class="bar-heading">Recon Activity</div>
+                  <div class="bar-sub-heading">Manual Matching | FC</div>
+                  <div class="hr-2px-line"></div>
+                  <div class="bar-details">
+                    <p class="bar-date">Date: 18-11-2023</p>
+                    <p class="bar-start-date">Start Time: 02:30:00 PM</p>
+                    <p class="bar-end-date">End Time: 03:00:00 PM</p>
+                    <a href="#">Show More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hr-2px-line"></div>
+        <div class="container-bot">
+          <div class="status">Status: Tracker is not started!</div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="quotes">
+        <q class="quote-content">
+          You’re braver than you believe, stronger than you seem, and smarter
+          than you think.
+        </q>
+        <div class="quote-author">- A.A. Milne</div>
+      </div>
+      <div class="author">Author : Saurabh Chaure</div>
+    </div>
+  </body>
+  <script src="script/app.js"></script>
+</html>
