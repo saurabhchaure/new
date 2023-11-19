@@ -110,6 +110,7 @@ body {
     ),
     #ee5622;
   cursor: pointer;
+  user-select: none;
 }
 
 .stop-btn {
@@ -122,6 +123,7 @@ body {
   font-size: 14px;
   border: 2px solid #ee5622;
   cursor: pointer;
+  user-select: none;
 }
 
 /* TRACKER CONTAINER */

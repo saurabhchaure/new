@@ -47,13 +47,13 @@
       <div class="tracker-container">
         <div class="container-top">
           <div class="user-name">User Name : Saurabh Chaure</div>
-          <div class="activity-timer">00 : 00 : 00</div>
+          <div class="activity-timer">0 : 0 : 0</div>
           <div class="total-work-hr">Total Working Hours : 05 : 00</div>
         </div>
         <div class="hr-2px-line"></div>
         <div class="container-mid">
           <div class="container-mid-left">
-            <div class="heading">11th November 2023, Sunday</div>
+            <div class="heading date"></div>
             <div class="activity-wrapper-left">
               <div class="wrapper-top">
                 <div class="small-heading-i">Select Activity :</div>
@@ -63,9 +63,6 @@
                   class="activity-select"
                 >
                   <option value="">Please choose Main Activity</option>
-                  <option value="recon">Recon Activity</option>
-                  <option value="eod">EOD Activity</option>
-                  <option value="dag">DAG Activity</option>
                 </select>
                 <select
                   name="sub-activity"
@@ -74,16 +71,9 @@
                   disabled
                 >
                   <option value="">Please choose Sub Activity</option>
-                  <option value="manualMatching">Manual Matching</option>
-                  <option value="auditPack">Audit Pack</option>
-                  <option value="feedValidation">Feed Validation</option>
                 </select>
                 <select name="client" id="client" class="activity-select">
                   <option value="">Please choose Client</option>
-                  <option value="agi">AGI</option>
-                  <option value="fc">FC</option>
-                  <option value="ge">GE</option>
-                  <option value="prud">PRUD</option>
                 </select>
                 <div class="short-values">
                   <div class="pair">
@@ -91,23 +81,11 @@
                     <input class="val" type="number" />
                   </div>
                   <div class="pair">
-                    <label class="key" for="val">Break Matched</label>
+                    <label class="key" for="val">Auto Matched</label>
                     <input class="val" type="number" />
                   </div>
                   <div class="pair">
-                    <label class="key" for="val">Break Matched</label>
-                    <input class="val" type="number" />
-                  </div>
-                  <div class="pair">
-                    <label class="key" for="val">Break Matched</label>
-                    <input class="val" type="number" />
-                  </div>
-                  <div class="pair">
-                    <label class="key" for="val">Break Matched</label>
-                    <input class="val" type="number" />
-                  </div>
-                  <div class="pair">
-                    <label class="key" for="val">Break Matched</label>
+                    <label class="key" for="val">Manual Matched</label>
                     <input class="val" type="number" />
                   </div>
                 </div>
