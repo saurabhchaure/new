@@ -1,0 +1,17 @@
+[
+  {
+    "id": 0,
+    "main_activities": ["Recon Activity", "EOD Activity", "DAG Activity"],
+    "sub_activities": {
+      "Recon Activity": ["Manual Matching", "Coding", "Reporting"],
+      "EOD Activity": ["Audit Pack", "QC File", "STIF", "Checklist"],
+      "DAG Activity": [
+        "Feed Validation",
+        "Fund Setup",
+        "RMA Setup",
+        "Missing balance clearation"
+      ]
+    },
+    "clients": ["All", "AGI", "FC", "GE", "Prud"]
+  }
+]
